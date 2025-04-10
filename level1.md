@@ -1,7 +1,7 @@
 # Bandit Level 1
 
 ## 📝 **Challenge Description**  
-In Level 1, you're already logged in as `bandit0`. Your goal is to find the password for `bandit1`. According to the instructions, the password is stored **in a file called `readme` located in the home directory**.  
+In Level 0, you're already logged in as `bandit0`. Your goal is to find the password for `bandit1`. According to the instructions, the password is stored **in a file called `readme` located in the home directory**.  
 
 Seems simple enough, but it teaches some basics about navigating the Linux file system and reading files from the command line.
 
