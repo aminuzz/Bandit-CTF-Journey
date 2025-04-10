@@ -18,7 +18,7 @@ Each level includes:
 
 | Level | Write-up |
 |-------|----------|
-| Level 0 | [level0.md](bandit/level0.md) |
+| Level 0 | [level0.md](Bandit-CTF-Journey/level0.md) |
 | Level 1 | [level1.md](bandit/level1.md) |
 | Level 2 | [level2.md](bandit/level2.md) |
 | ... | ... |
