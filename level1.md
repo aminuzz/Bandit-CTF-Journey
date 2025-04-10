@@ -1,7 +1,6 @@
 # Bandit Level 1
 
 ## 📝 **Challenge Description**  
-
 In Level 1, you're already logged in as `bandit0`. Your goal is to find the password for `bandit1`. According to the instructions, the password is stored **in a file called `readme` located in the home directory**.  
 
 Seems simple enough, but it teaches some basics about navigating the Linux file system and reading files from the command line.
@@ -9,7 +8,6 @@ Seems simple enough, but it teaches some basics about navigating the Linux file 
 ---
 
 ## 🔍 **What I Initially Tried**  
-
 After logging in using SSH, I didn’t see anything immediately obvious in the terminal. I thought maybe I had to search deeper or use some fancy commands.
 
 I tried using:
@@ -24,7 +22,6 @@ cat
 ...but I forgot to add the file name, so it just hung waiting for input. A classic beginner mistake 😅.
 
 ## ✔️ What Worked
-
 Once I realized my mistake, I simply used the `cat` command properly by adding a filename to read the contents of the file:
 ```bash
 cat readme
@@ -43,3 +40,6 @@ Here's a quick breakdown:
 
 ## 🛠️ Tools Used
 Still using **Cygwin** for my terminal emulator. I'm considering trying this on a VM or WSL (Windows Subsystem for Linux) soon to get more hands-on Linux experience. 
+
+## 📓 Quick Note
+If you are currently working through these levels, you might want to save your passwords in a file so it can be easier for you to reference. I recommend using **Notepad** to jot down the passwords for each level as you progress 😄. 
