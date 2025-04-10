@@ -19,8 +19,8 @@ Each level includes:
 | Level | Write-up |
 |-------|----------|
 | Level 0 | [level0.md](level0.md) |
-| Level 1 | [level1.md](bandit/level1.md) |
-| Level 2 | [level2.md](bandit/level2.md) |
+| Level 1 | [level1.md](level1.md) |
+| Level 2 | [level2.md](level2.md) |
 | ... | ... |
 
 ---
