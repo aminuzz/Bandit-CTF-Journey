@@ -17,11 +17,23 @@ Each level includes:
 ## 📂 Levels Completed
 
 | Level | Write-up |
-|-------|----------|
+|:-------:|:----------:|
 | Level 0 | [level0.md](level0.md) |
 | Level 1 | [level1.md](level1.md) |
 | Level 2 | [level2.md](level2.md) |
 | Level 3 | [level3.md](level3.md) |
+| Level 4 | [level3.md](level4.md) |
+| Level 5 | [level3.md](level5.md) |
+| Level 6 | [level3.md](level6.md) |
+| Level 7 | [level3.md](level7.md) |
+| Level 8 | [level3.md](level8.md) |
+| Level 9 | [level3.md](level9.md) |
+| Level 10 | [level3.md](level10.md) |
+| Level 11 | [level3.md](level11.md) |
+| Level 12 | [level3.md](level12.md) |
+| Level 13 | [level3.md](level13.md) |
+| Level 14 | [level3.md](level14.md) |
+
 
 ---
 
