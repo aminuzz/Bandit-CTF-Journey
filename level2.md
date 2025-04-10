@@ -1,4 +1,4 @@
-# Bandit Level 2
+# Bandit Level 1 → 2
 
 ## 📝 **Challenge Description**  
 In Level 2, the goal is to retrieve the password for `bandit2`. According to the challenge description:
