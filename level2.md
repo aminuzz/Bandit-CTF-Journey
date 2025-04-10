@@ -44,3 +44,5 @@ Still using Cygwin to access the server. I've also started messing with a **Ubun
 
 ## 🔐 Next Step
 With the password for `bandit2` in hand, it's time to move on to the next level. The next level involves a file with spaces in its name. 
+
+➡️ [Continue to Level 3 →](level3.md)
