@@ -7,7 +7,7 @@ In Level 3, the goal is to retrieve the password for `bandit3`. This time, the c
 
 This is another lesson in how filenames with special characters — in this case, *spaces* — can mess with the terminal if you're not careful.
 
----
+
 
 🔍 **What I Initially Tried**  
 I started by listing the files like usual:
