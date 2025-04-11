@@ -1,15 +1,15 @@
 # Bandit Level 3 → 4
 
-## 📝 **Challenge Description**  
+## 📝 Challenge Description  
 In Level 4, the password for `bandit4` is hidden in a file. According to the instructions:
 
 > The password is stored in a **hidden file** in the **`inhere`** directory.
 
 This level introduces the concept of hidden files — the kind that don’t show up with a regular `ls` command.
 
----
 
-## 🔍 **What I Initially Tried**  
+
+## 🔍 What I Initially Tried 
 At first, I saw a folder named `inhere` in the home directory. For a moment, I thought it might be a special file, so I tried opening it with `cat` like this:
 ```bash
 cat inhere
