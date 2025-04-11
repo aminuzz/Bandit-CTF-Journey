@@ -1,5 +1,5 @@
 # Bandit Level 3 → 4
-
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit4.html)
 ## 📝 Challenge Description  
 In Level 4, the password for `bandit4` is hidden in a file. According to the instructions:
 
