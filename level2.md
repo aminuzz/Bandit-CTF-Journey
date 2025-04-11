@@ -7,7 +7,7 @@ In Level 2, the goal is to retrieve the password for `bandit2`. According to the
 
 At first glance, this looks simple — just like Level 1. But the trick here is that the filename is a single dash (`-`), which causes issues with some commands that interpret it as a flag or option.
 
----
+
 
 ## 🔍 **What I Initially Tried**  
 I started by listing the contents of the directory:
