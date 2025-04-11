@@ -1,6 +1,6 @@
 # Bandit Level 2 → 3
 
-📝 **Challenge Description**  
+## 📝 Challenge Description 
 In Level 3, the goal is to retrieve the password for `bandit3`. This time, the challenge says:
 
 > The password is stored in a file called "spaces in this filename" located in the home directory.
@@ -9,7 +9,7 @@ This is another lesson in how filenames with special characters — in this case
 
 
 
-🔍 **What I Initially Tried**  
+## 🔍 What I Initially Tried  
 I started by listing the files like usual:
 ```
 ls
