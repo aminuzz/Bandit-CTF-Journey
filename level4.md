@@ -3,7 +3,7 @@
 ## 📝 Challenge Description  
 In Level 4, the password for `bandit4` is hidden in a file. According to the instructions:
 
-> The password is stored in a **hidden file** in the **`inhere`** directory.
+> The password is stored in a **hidden file** in the `inhere` directory.
 
 This level introduces the concept of hidden files — the kind that don’t show up with a regular `ls` command.
 
