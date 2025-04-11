@@ -53,4 +53,4 @@ And there was the password for `bandit4`.
 ## 🔐 Next Step
 We've got the password! The next level adds a bit more complexity — it's about finding a specific line based on its attributes like size and permissions. Let's go. 
 
-➡️[Continue to Level 5](level5.md)
+➡️[Continue to Level 5 →](level5.md)
