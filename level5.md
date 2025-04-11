@@ -39,8 +39,8 @@ find . -type f -exec file {} \; | grep "ASCII text"
 Let me break it down:
 - `find . -type f` specifies the search to files (not directories) in the current directory.
 - `-exec file {} \;` runs the `file` command on each of those files. `{}` is replaced by each filename, and `\;` ends the command.
-- The output of `file` is piped into `grep` to filter only those lines containing "ASCII text".
-This narrowed it down to a single file that matched. Once I had the same, I ran:
+- The output of `file` is piped into `grep` to filter only those files containing "ASCII text". This narrowed it down to a single file that matched.
+Then I ran this command:
 ```
 cat ./-file07
 ```
