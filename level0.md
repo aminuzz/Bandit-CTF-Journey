@@ -12,7 +12,7 @@ Your task is to figure out how to connect to the remote server and gain access t
 
 Pretty simple for someone experienced, but for a beginner it might seem confusing at first.
 
----
+
 
 ## 🔍 What I Initially Tried
 
