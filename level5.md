@@ -7,7 +7,7 @@ The instructions for Level 5 state:
 
 This level steps things up — it’s not just about finding a specific file name anymore, but filtering files based on multiple conditions. It’s a great introduction to chaining command-line tools.
 
----
+
 
 ## 🔍 What I Initially Tried 
 I first needed to understand what exactly "human-readable" meant. After some digging and experimenting, I learned that the `file` command is a useful tool for determining the type of contents in a file. For example:
