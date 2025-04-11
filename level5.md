@@ -3,7 +3,7 @@
 ## 📝 Challenge Description
 The instructions for Level 5 state:
 
-> The password for the next level is stored in a file somewhere in the **`inhere`** directory, **which is human-readable**, **1033 bytes in size**, and **not executable**.
+> The password for the next level is stored in a file somewhere in the `inhere` directory, **which is human-readable**, **1033 bytes in size**, and **not executable**.
 
 This level steps things up — it’s not just about finding a specific file name anymore, but filtering files based on multiple conditions. It’s a great introduction to chaining command-line tools.
 
