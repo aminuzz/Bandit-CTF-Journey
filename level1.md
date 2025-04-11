@@ -5,7 +5,7 @@ In Level 0, you're already logged in as `bandit0`. Your goal is to find the pass
 
 Seems simple enough, but it teaches some basics about navigating the Linux file system and reading files from the command line.
 
----
+
 
 ## 🔍 **What I Initially Tried**  
 After logging in using SSH, I didn’t see anything immediately obvious in the terminal. I thought maybe I had to search deeper or use some fancy commands.
