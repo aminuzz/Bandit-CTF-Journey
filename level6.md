@@ -60,4 +60,5 @@ It’s becoming second nature to combine these tools now — this level really m
 
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 7**. 
+
 ➡️ [Continue to Level 7 →](level7.md)
