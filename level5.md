@@ -1,5 +1,5 @@
 # Bandit Level 4 → 5
-
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit5.html)
 ## 📝 Challenge Description
 The instructions for Level 5 state:
 
