@@ -1,5 +1,5 @@
 # Bandit Level 2 → 3
-[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit2.html)
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit3.html)
 ## 📝 Challenge Description 
 In Level 3, the goal is to retrieve the password for `bandit3`. This time, the challenge says:
 
