@@ -48,4 +48,4 @@ Still on Cygwin. At this point, I'm getting comfortable with basic shell usage a
 ## 🔐 Next Step
 Now that we've got the password for `bandit3`, the next level introduces hidden files. 
 
-➡️ [Continue to Level 4](level4.md)
+➡️ [Continue to Level 4 →](level4.md)
