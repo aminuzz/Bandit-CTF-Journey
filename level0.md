@@ -1,5 +1,5 @@
 # Bandit Level 0
-[Here's the link to Level 0 😄](https://overthewire.org/wargames/bandit/bandit0.html)
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit0.html)
 
 ## 📝 Challenge Description
 
