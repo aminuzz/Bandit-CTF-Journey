@@ -59,4 +59,5 @@ Commands: `find`, `file`, `grep`, `cat`.
 It’s becoming second nature to combine these tools now — this level really made me feel like I’ve got a strong grasp on Linux file filtering.
 
 ## 🔐 Next Step
-We’ve successfully grabbed the password and are ready for Level 6. 
+We’ve successfully grabbed the password and are ready for **Level 7**. 
+➡️ [Continue to Level 7 →](level7.md)
