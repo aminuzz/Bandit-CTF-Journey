@@ -1,5 +1,5 @@
 # Bandit Level 0 → 1
-
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit1.html)
 ## 📝 **Challenge Description**  
 In Level 0, you're already logged in as `bandit0`. Your goal is to find the password for `bandit1`. According to the instructions, the password is stored **in a file called `readme` located in the home directory**.  
 
