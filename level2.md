@@ -12,12 +12,12 @@ At first glance, this looks simple — just like Level 1. But the trick here is 
 ## 🔍 **What I Initially Tried**  
 I started by listing the contents of the directory:
 ```bash
-ls
+$ ls
 ```
 Sure enough, there was a file named `-`.
 So I did what worked before:
 ```bash
-cat -
+$ cat -
 ```
 
 But instead of showing the password, it just seemed to hang or act weird. I realized that `cat -` usually means "read from standard input", so the shell wasn't treating the `-` as a filename — it thought I was trying to pipe something or give it a command-line option.
@@ -25,7 +25,7 @@ But instead of showing the password, it just seemed to hang or act weird. I real
 ## ✔️ What Worked
 After a bit of research and trial and error, I figured out that I could tell the shell explicitly to look for a file named `-` in the current directory by prefixing it with `./`, like this:
 ```bash
-cat ./-
+$ cat ./-
 ```
 And that worked! It showed me the password for `bandit2`. 
 Here's the breakdown:
