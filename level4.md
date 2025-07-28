@@ -43,7 +43,7 @@ And there was the password for `bandit4`.
 
 ## 🧠 Key Learnings
 - A folder is often displayed in blue text in the terminal — that's a quick visual cue.
-- Hidden files (those starting with a `.`) aren't shown with a normal `ls` — you need `ls-a`.
+- Hidden files (those starting with a `.`) aren't shown with a normal `ls` — you need `ls -a`.
 - You can't `cat` a directory — it'll throw an error because it's not a readable file.
 - Sometimes the key is just knowing what *kind* of thing you're dealing with (directory vs file vs hidden file).
 
