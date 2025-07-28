@@ -23,7 +23,7 @@ So I tried to run:
 ```
 cat spaces in this filename
 ```
-But that didn't work. The shell interpreted each word as a separate argument, so `cat` thought I was aksing it to read multiple files named `spaces`, `in`, `this`, and `filename` - none of which existed. 
+But that didn't work. The shell interpreted each word as a separate argument, so `cat` thought I was asking it to read multiple files named `spaces`, `in`, `this`, and `filename` - none of which existed. 
 
 ## ✔️ What Worked
 To handle spaces in filenames, I wrapped the filename in quotes:
@@ -35,6 +35,9 @@ Alternatively, using escape sequences also works:
 cat spaces \\ in\\ this\\ filename
 ```
 Either of those methods told the shell to treat the whole thing as one file name, and I was able to read the password for `bandit3`. 
+
+## 💡Bonus Tip
+You can press the Tab key after typing part of the filename `(spaces)` and the shell will auto-complete it with the correct escaping or quoting, saving time and avoiding mistakes. 
 
 ## 🧠 Key Learnings
 - Spaces in the filename must be either quoted `("file name")` or escaped `(file\\ name)`.
