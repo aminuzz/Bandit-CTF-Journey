@@ -32,10 +32,10 @@ After realizing my mistake, I added the `-p` flag to the SSH command to specifiy
 ```bash
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
-Here's a breakdwon of how this works:
+Here's a breakdown of how this works:
 - `ssh` is the command to securely login to a remote computer/server. 
 - `bandit0@bandit.labs.overthewire.org` is the standard way of logging in. It follows this format: `username@host`
-- `-p 2220` specifies what port we are using ssh to connect to. The default port is **port 22**.
+- `-p 2220` specifies what port we are using ssh to connect to. The default port for the ssh protocol is **port 22**.
 
 ## 🧠 Key Learnings
 
@@ -49,9 +49,7 @@ This challenge helped me understand some of the fundamentals of connecting to re
 
 ## 🛠️ Tools Used
 
-In this case I am using **Cygwin**, a terminal emulator however you can also use **Powershell** or simply use **Terminal**. 
-If you're extra fancy and what to get into the nitty gritty stuff I recommend experimenting setting up a virtual machine with virtualization software. 
-**VMware** is a good choice for beginners and you can find dozens of tutorials online on how to get your favorite Linux distro up and running with it.
+In this case, I used Cygwin, which provides a Linux-like environment on Windows. You can also use PowerShell or a standard Unix terminal. If you're interested in a deeper dive, setting up a virtual machine with VMware or VirtualBox is a great next step.
 
 ## 🔐 Next Step
 
