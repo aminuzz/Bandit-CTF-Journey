@@ -10,11 +10,11 @@ In this level, the password for `bandit8` is stored in the file called `data.txt
 
 
 ## 🔍 What I Initially Tried 
-At first, I opened `data.txt` with the cat command to see what was in the file, and see if I could find the password manually:
+At first, I opened `data.txt` with the cat command to inspect the contents of the file and see if I could spot the password manually:
 ```bash
 cat data.txt
 ```
-However, that pretty much seemed impossible because the file had so much text in it and skimming through the entire file to find the password would take forever so I needed to figure out a way where I can sort the file or pinpoint the exact location of the word **millionth** to find the password. From the previous level, I figured that the `grep` command could help us here since it allows us to search for a specific term that you can specify and it'll show you the exact location where that term is. 
+However, the file was far too large to scan manually — skimming through all of it wasn’t practical so I needed to figure out a way where I can sort the file or pinpoint the exact location of the word **millionth** to find the password. From the previous level, I figured that the `grep` is perfect for this, as it allows you to search for specific terms within a file and it'll show you the exact location where that term is. 
 
 
 ## ✔️ What Worked
@@ -29,11 +29,11 @@ From the output of this command, I found the password:
 ```
 millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ```
-And there it was— the password for `bandit8`!
+And there it was the password for `bandit8`!
 
 
 ## 🧠 Key Learnings
-- Again another file filtering command, `grep`, has helped me solved this level so it's good to know how to utilize Linux filtering techniques to quickly sort and filter out information from large files. the `find` command gets the job done here however learning where to specify where the command should look is very important here.
+- The `grep` command is extremely helpful for locating specific keywords in large files. Without it, finding the right line in a file like `data.txt` would take far too long.
 
 
 ## 🛠️ Tools Used 
@@ -44,4 +44,4 @@ I'm slowly getting used to using file filtering techniques in Linux. It's a lot 
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 8**. 
 
-➡️ [Continue to Level 8 →](level 8 --> 9.md)
+➡️ [Continue to Level 8 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level9.md)
