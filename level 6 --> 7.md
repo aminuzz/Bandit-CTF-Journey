@@ -1,4 +1,4 @@
-# Bandit Level 5 → Level 6
+# Bandit Level 6 → Level 7
 
 ## 📝 Challenge Description 
 In this level, the password for `bandit7` is stored **somewhere** on the server. Unlike the previous level where the password was stored in a specified directory, we have to find a way to leverage the power of the `find` and `file` commands to look through the entire server.
@@ -18,37 +18,37 @@ I tried using the `-a` flag to see if there was a hidden directory that I have t
 ```
 .  ..  .bash_logout  .bashrc  .profile
 ```
-I figured these directories were configuration directories for the level so I didn't look into them. At this point I was really confused so I read the question again. That's where I found my mistake, the question states that the file is stored **somewhere** on the server. So it wasn't a specific directory I had to look into..
-- One for **file size**: exactly 1033 bytes
-- One to exclude **executable** files
+I figured these directories were configuration directories for the level so I didn't look into them. At this point I was really confused so I read the question again. That's where I found my mistake, the question states that the file is stored **somewhere** on the server. This means that we had to look through all of the directories on the server but obviously that would take forever so I leveraged the power of the `find` and `file` command to find the path to this file. 
 
 ## ✔️ What Worked
-Here's the command I ended up using:
+Here's the command I ended up using (very similar to the previous level):
 ```
-find -type f -size 1033c ! -executable -exec file {} \; | grep "ASCII text"
+find / -type f -size 33c -user bandit7 -group bandit6 -exec file {} \; | grep "ASCII text"
 ```
 **What this does:**
-- `find`: searches the current directory and all subdirectories.
+- `find /`: searches from the **root** directory and all of its subdirectories.
 - `-type f`: ensures we're only looking at files.
-- `-size 1033c`: filters for files that are exactly 1033 bytes (`c` = bytes).
-- `! -executable`: ensures the file is **not** executable.
+- `-size 33c`: filters for files that are exactly 33 bytes (`c` = bytes).
+- `-user bandit7`: ensures the file is owned by user bandit7.
+- `-group bandit6`: ensures the file is owned by group bandit6.
 - `-exec file {} \;`: runs the `file` command on each result to determine its type.
 - `| grep "ASCII text"`: filters for human-readable files (i.e. ASCII).
-From the output, I found the file path:
+From the output of this command, I found the file path:
 ```
-./maybehere07/.file2: "ASCII text"
+/var/lib/dpkg/info/bandit7.password: "ASCII text"
 ```
 So I ran:
 ```
-cat ./maybehere07/.file2
+cat /var/lib/dpkg/info/bandit7.password
 ```
-And there it was— the password for `bandit6`!
+And there it was— the password for `bandit7`!
+## 💡Quick Note
+While the challenge didn’t require the file to be human-readable, using **file** and **grep "ASCII text"** helped confirm we had the right kind of file — likely to contain a password.
 
 ## 🧠 Key Learnings
-- `find` is incredibly powerful when combined with size, type, and permission flags.
-- You can use `! -executable` to filter out anything you can't "run" like a program/script.
-- Using `file` alongside `grep` helps validate file content types across multiple unknown files.
-- Visual cues (like dotfiles or hidden names) often mean something special in Bandit challenges.
+- Again the `find` command gets the job done here however learning where to specify where the command should look is very important here.
+- Knowing the terminology of **somewhere on the server** is very important and moving foward I need to work on reading the question clearly before moving foward with the solution.
+- This level was very similar to the previous one but it's good to know the importance of using Linux file filtering techniques to find the file you are looking for.
 
 ## 🛠️ Tools Used 
 Terminal: Cygwin.
