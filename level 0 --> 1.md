@@ -44,7 +44,7 @@ Still using **Cygwin** for my terminal emulator. I'm considering trying this on 
 ## 🔐 Next Step
 Now we can move on to Level 2. According to the instructions, the password is stored in a file called `-` located in the home directory.
 
-➡️ [Continue to Level 2 →](level2.md)
+➡️ [Continue to Level 2 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%201%20--%3E%202.md)
 
 ## 📓 Quick Note
 If you are currently working through these levels, you might want to save your passwords in a file so it can be easier for you to reference. I recommend using **Notepad** to jot down the passwords for each level as you progress 😄. 
