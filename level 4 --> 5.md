@@ -59,4 +59,4 @@ Still using Cygwin here, though this would work on any UNIX-like terminal — WS
 ## 🔐 Next Step
 Now that we've got the password, we can move on to the next level which is similar to this one however there are more requirements for the **human readable file**. 
 
-➡️ [Continue to Level 6 →](level6.md)
+➡️ [Continue to Level 6 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%205%20--%3E%206.md)
