@@ -53,5 +53,5 @@ Before this, reading documentation wasn't something I considered much however fr
 ## 🔐 Next Step
 We’ve successfully grabbed the password and we're ready for **Level 9**. 
 
-➡️ [Continue to Level 9 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level9.md)
+➡️ [Continue to Level 9 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%209%20--%3E%2010.md)
 
