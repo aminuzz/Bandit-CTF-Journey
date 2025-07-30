@@ -68,6 +68,6 @@ I'm feeling even more confident with my Linux skills, I know there's much more i
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 10**. 
 
-➡️ [Continue to Level 10 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level9.md)
+➡️ [Continue to Level 10 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2010%20--%3E%2011.md)
 
 
