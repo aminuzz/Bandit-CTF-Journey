@@ -90,4 +90,4 @@ First time hearing about **base64** and how it changes the way you see your data
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 11**. 
 
-➡️ [Continue to Level 11 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2011%20--%3E%2012.md)
+➡️ [Continue to Level 12 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2011%20--%3E%2012.md)
