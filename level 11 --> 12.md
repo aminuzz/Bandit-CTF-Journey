@@ -54,11 +54,12 @@ The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 While reading the `tr` command syntax, I was initially confused about which sets of letters to use and how to translate them. After some thinking, I realized that since the cipher rotates each character by 13 positions, I had to split the set of characters into two: one for the rotated characters from A-N and another for the rest. I also made sure to include both uppercase and lowercase characters in the correct order.
 
 ## 🛠️ Tools Used 
-Terminal: Cygwin.
-Commands: `tr`, `cat`. 
+Terminal: Cygwin
+
+Commands: `tr`, `cat`
  
 
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 12**. 
 
-➡️ [Continue to Level 12 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2011%20--%3E%2012.md)
+➡️ [Continue to Level 12 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2012%20--%3E%2013.md)
