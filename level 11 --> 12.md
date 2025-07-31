@@ -11,83 +11,54 @@ In this level, the password for `bandit12` is stored in the file called `data.tx
 
 
 ## 🔍 What I Initially Tried 
-At first, I opened `data.txt` to see the contents of the file:
-```bash
-cat data.txt
+I assumed this level was similar to the previous one, where I had to decipher some encoded text. In this case, it was the **ROT13** cipher. Based on the description, it's pretty self-explanatory: the **ROT13** algorithm rotates each lowercase and uppercase letter by 13 positions. Here's an example of how we can use the **ROT13** cipher on the string `HELLO`:
+
 
 ```
-Output:
-```bash
+H ---> U
+E ---> R
+L ---> Y
+L ---> Y
+O ---> B
 
-VGhlIHBhc3N3b3JkIGlzIGR0UjE3M2ZaS2IwUlJzREZTR3NnMlJXbnBOVmozcVJyCg==
 ```
-Based off the output, I did some research on what **base64** encoded data is. I assumed it was a encryption algorithm where I have to decrypt the data in order to get the password however that wasn't the case. **Base64** simply converts binary data into human-readable text. It offers no security so anyone can decode it. So all I had to do was decode the data.
+The challenge was figuring out how to decrypt this cipher to get the password for the next level. While reviewing the recommended commands for this level, the `tr` command stood out. `tr` is short for translate—it translates text based on the input and output character sets you define. The syntax looks like this:
+
+```bash
+tr SET1 SET2
+```
+One thing to keep in mind is that `tr` requires input via a pipe; it doesn’t work as a standalone command.
 
 
 
 ## ✔️ What Worked
-After reading the [base64 man page](https://linux.die.net/man/1/base64), I had to use the `-d` flag to decode the data:
-```
-base64 -d data.txt
+After some trial and error, this was the command I used:
+```bash
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 ```
 **What this does:**
-- `base64 -d data.txt`: this decodes the base64 data that is present in `data.txt`. 
-The decoded output directly revealed the password:
+- `cat data.txt`: Outputs the contents of `data.txt`.
+- `| tr 'A-Za-z' 'N-ZA-Mn-za-m'`: Pipes the output into the `tr` command, which performs a ROT13 transformation.
+As a result of this command, I obtained the password for `bandit12`.:
 ```
-The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 ```
-And there it was the password for `bandit11`!
+
 
 
 ## 🧠 Key Learnings
-- Knowing the difference between **encoding** and **encryption** is very important because base64 encoding can be confused with encrypting data. Encoding your data with **base64** can be easily reversed unlike encrypting data where you need a specific key for decryption.
-- **base64** encoding is just a way to represent binary or special characters using only plain text.
+- Learning how to use the `tr` command to decipher the **ROT13** algorithm and how to use it in conjuction with other commands.
+- Understood the importance of character set mapping and using pipes to feed input into commands.
 
 ## 😕 Common misconceptions
-When I solved this level I was thinking to myself, why encode text into other text because by definition, it translates binary into text however you have to remember any sort of data even the text on the screen you're reading are just bunch of 1s and 0s. For example, if we were to encode the string **"hello"** how would that work? Here's how:
-
-**Step 1**: You start with normal, readable text:
-```text
-hello
-```
-
-**Step 2**: Text is just characters --> which are really numbers
-Each character is represented by a number using **ASCII** (or UTF-8):
-| Character | ASCII |
-| --------- | ----- |
-| h         | 104   |
-| e         | 101   |
-| l         | 108   |
-| l         | 108   |
-| o         | 111   |
-
-**Step 3**: Those numbers are turned into binary (1s and 0s)
-For example:
-```
-h = 104 → 01101000  
-e = 101 → 01100101  
-l = 108 → 01101100  
-...
-```
-The full string `hello` becomes a big string of bits:
-```
-01101000 01100101 01101100 01101100 01101111
-```
-
-
-**Step 4**: Base64 encodes this binary into a new "text format"
-It takes chunks of 6 bits at a time and maps them to **printable characters** like `A-Z`, `a-z`, `0-9`, `+`, `/`.
-This is how you something like:
-```
-hello → aGVsbG8=
-```
+While reading the `tr` command syntax, I was initially confused about which sets of letters to use and how to translate them. After some thinking, I realized that since the cipher rotates each character by 13 positions, I had to split the set of characters into two: one for the rotated characters from A-N and another for the rest. I also made sure to include both uppercase and lowercase characters in the correct order.
 
 ## 🛠️ Tools Used 
 Terminal: Cygwin.
-Commands: `base64`, `cat`. 
-First time hearing about **base64** and how it changes the way you see your data and it's pretty interesting in my opinion. 
+Commands: `tr`, `cat`. 
+ 
 
 ## 🔐 Next Step
-We’ve successfully grabbed the password and are ready for **Level 11**. 
+We’ve successfully grabbed the password and are ready for **Level 12**. 
 
 ➡️ [Continue to Level 12 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2011%20--%3E%2012.md)
