@@ -1,4 +1,4 @@
-# Bandit Level 10 → Level 11
+# Bandit Level 11 → Level 12
 [Here's the link 😄](https://overthewire.org/wargames/bandit/bandit12.html)
 
 ## 📝 Challenge Description 
