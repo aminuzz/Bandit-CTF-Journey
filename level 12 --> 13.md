@@ -1,4 +1,4 @@
-# Bandit Level 11 → Level 12
+# Bandit Level 12 → Level 13
 [Here's the link 😄](https://overthewire.org/wargames/bandit/bandit12.html)
 
 ## 📝 Challenge Description 
@@ -11,23 +11,45 @@ In this level, the password for `bandit13` is in the file `data.txt` which is a 
 
 
 ## 🔍 What I Initially Tried 
-It says in the level description that the file is a hexdump of a file that **has been repeatedly compressed**. From my own experience, compressing a file is used to reduce the size of a larger file to a smaller file. :
+It says in the level description that the file is a **hexdump** of a file that **has been repeatedly compressed**. I know when you compress a file, it's to reduce the total size of the file for storage management, performance, etc. Like previous levels the first thing I did was open the file:
 
 
 ```
-H ---> U
-E ---> R
-L ---> Y
-L ---> Y
-O ---> B
+cat data.txt
 
+Output:
+00000000: 1f8b 0808 83c9 8768 0203 6461 7461 322e  .......h..data2.
+00000110: 9425 4ea5 6f8b 443a 1354 c192 724a 41ce  .%N.o.D:.T..rJA.
+00000120: 7ac2 b460 0a58 993d edf3 a684 20c1 7e19  z..`.X.=.... .~.
+00000130: 19de 3818 a633 54c3 4e1b 39e6 59aa 745d  ..8..3T.N.9.Y.t]
+00000140: 714b 641f 68d7 c110 2ed7 2b27 10bb 6903  qKd.h.....+'..i.
+00000150: 681d 2a8f bd9f d69b c854 2ebd b4b2 57ea  h.*......T....W.
+00000160: 2747 3e5c 88ea 6c87 64fe a021 97c5 1ac4  'G>\..l.d..!....
+00000170: 1c82 0cc9 774a 0322 2239 940a 0fb3 b525  ....wJ.""9.....%
+00000180: f110 93f3 db38 2d9c e030 4c84 f2b8 b872  .....8-..0L....r
+00000190: fb49 be6a 4378 4206 5ed3 baf1 a670 bca0  .I.jCxB.^....p..
+000001a0: 0bb2 d690 b4e7 f4c0 2657 db18 3ac5 077f  ........&W..:...
+000001b0: 5658 13a4 2fae ff04 77fb 87d8 79de e31c  VX../...w...y...
+000001c0: cf7c a692 7882 8407 c56d 1442 e1ce 068b  .|..x....m.B....
+000001d0: d791 b2a3 c666 e685 2372 11f1 0b77 bf28  .....f..#r...w.(
+000001e0: 3ef2 6605 4760 ac1f 11d5 780e c9f2 6066  >.f.G`....x...`f
+000001f0: 4ab9 9087 0a80 0461 660b e746 dbc0 44c1  J......af..F..D.
+00000200: 247e 109a e4c1 e31b ebef 3814 b9b4 69e3  $~........8...i.
+00000210: acea 7dbe 8b3d 107f b304 d825 183f 2bc4  ..}..=.....%.?+.
+00000220: 7c3e 58c3 30d7 e181 b973 1c50 501a 7f90  |>X.0....s.PP...
+00000230: 614e c3d2 290f 3da4 acba 33aa 4ca9 2082  aN..).=...3.L. .
+00000240: 5bfc 7d5a fd0f 0431 3a03 3c27 f8bb 9229  [.}Z...1:.<'...)
+00000250: c284 8599 ec57 c051 a8b0 353e 0200 00    .....W.Q..5>...
 ```
-The challenge was figuring out how to decrypt this cipher to get the password for the next level. While reviewing the recommended commands for this level, the `tr` command stood out. `tr` is short for translate—it translates text based on the input and output character sets you define. The syntax looks like this:
+After some research I found that a **hexdump** of a file is a **hexadecimal representation of binary data**. It shows the raw content of a file byte by byte, displaced as hexadecimal numbers. This is useful for inspecting non-text files or examining file corruption, as it reveals the underlying data structure. When looking through the hexdump, I found out that the bytes `1f 8b` mean that this file is compressed using the **gzip algorithm**. 
 
+Before we run this command I needed to make a temporary directory so I can work with the decompression process without getting the main directory too messy:
 ```bash
-tr SET1 SET2
+mktemp -d
 ```
-One thing to keep in mind is that `tr` requires input via a pipe; it doesn’t work as a standalone command.
+
+After I copied `data.txt` to 
+
 
 
 
