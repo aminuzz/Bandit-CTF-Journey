@@ -41,30 +41,104 @@ Output:
 00000240: 5bfc 7d5a fd0f 0431 3a03 3c27 f8bb 9229  [.}Z...1:.<'...)
 00000250: c284 8599 ec57 c051 a8b0 353e 0200 00    .....W.Q..5>...
 ```
-After some research I found that a **hexdump** of a file is a **hexadecimal representation of binary data**. It shows the raw content of a file byte by byte, displaced as hexadecimal numbers. This is useful for inspecting non-text files or examining file corruption, as it reveals the underlying data structure. When looking through the hexdump, I found out that the bytes `1f 8b` mean that this file is compressed using the **gzip algorithm**. 
-
-Before we run this command I needed to make a temporary directory so I can work with the decompression process without getting the main directory too messy:
-```bash
-mktemp -d
-```
-
-After I copied `data.txt` to 
-
-
+After some research I found that a **hexdump** of a file is a **hexadecimal representation of binary data**. It shows the raw content of a file byte by byte, displaced as hexadecimal numbers. This is useful for inspecting non-text files or examining file corruption, as it reveals the underlying data structure. When looking through the hexdump, I found out that the bytes `1f8b` meant that this file was compressed using the **gzip algorithm**. But first we need to reverse the hexdump before we can start the decompression process.
 
 
 ## ✔️ What Worked
-After some trial and error, this was the command I used:
+Before we decompress the file, I checked what permissions I had:
 ```bash
-cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+ls -ld
+drwxr-xr-x 2 root root 4096 Jul 28 19:03 .
 ```
-**What this does:**
-- `cat data.txt`: Outputs the contents of `data.txt`.
-- `| tr 'A-Za-z' 'N-ZA-Mn-za-m'`: Pipes the output into the `tr` command, which performs a ROT13 transformation.
-As a result of this command, I obtained the password for `bandit12`.:
+As seen here as user bandit12 I only had read and execute permissions within the home directory so I needed to make a temporary directory and work with the files in there:
+```bash
+mktemp -d
+/tmp/tmp.PgXVBPzSYN$
 ```
-The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+After, I copied `data.txt` to the temporary directory (`/tmp/tmp.ZDmWIhuS84`) we just created since we do not have write permissions in the home directory for this level. 
+```bash
+cp data.txt /tmp/tmp.ZDmWIhuS84
 ```
+
+Now after some research, I found that the `xxd` command allows us to generate and reverse a hexdump file:
+```bash
+xxd -r data.txt > new_file.gz
+```
+After we move on to the next file (`new_file.gz`) and start decompression. I knew it had to be a `.gz` file because in the beginning of the hexdump the first two bytes represented that the file had been compressed with **gzip** hence the reasoning behind the file name. Now with the `gzip` command, I decompressed the file:
+```bash
+gzip -d new_file.gz 
+```
+
+Now since we decompressed `new_file.gz` we're now left with just `new_file` so instead of opening the file using `cat` I decided to see what type of data was in the file using the `file` command:
+```bash
+file new_file
+new_file: bzip2 compressed data, block size = 900k
+```
+
+Based off this output, we know this file has been compressed with the **bzip2 algorithm** so after reading through the [man page](https://linux.die.net/man/1/bzip2) this was the command I came up with:
+```bash
+bzip2 -d new_file
+```
+
+Since `new_file` didn't have the `.bz2` ending to it, the algorithm writes the output to the original file with the **.out** file extension to it. Now let's check what type of data is in `new_file.out`:
+```bash
+file new_file.out
+new_file.out: gzip compressed data
+```
+
+Again we're back with a `.gz` file, but before we decompress we must rename the file to have the `.gz` extension:
+```bash
+mv new_file.out new_file.gz
+gzip -d new_file.gz
+```
+
+Now I checked again what type of data the `new_file` contains:
+```bash
+file new_file
+new_file: POSIX tar archive (GNU)
+```
+
+Now the file contains a `tar archive` which is a way to store multiple files into a singular file (an archive) and have the ability to manipulate the archive. This is different from compressing a file since with a **tar archive** it's just a collection of files/directories that are combined into one file. After reading the [man page](https://man7.org/linux/man-pages/man1/tar.1.html) and reanming the file to `new_file.tar` I ran this command:
+```bash
+tar -xf new_file.tar
+```
+
+Then I checked if any new files were created and I found `data5.bin` in the directory:
+```bash
+bandit12@bandit:/tmp/tmp.dPujjGvAN6$ ls
+data5.bin  data.txt  new_file.tar
+```
+
+`data5.bin` was also a **tar archive** so I ran the same command as before on this file:
+```bash
+tar -xf data5.bin
+```
+
+I checked again if a new file was created and I found a file called `data6.bin`. I checked what type of data it contained and yet again it was a `bzip2` file. Knowing it was a `bzip2` file, I renamed it just for simiplicity sake and decompressed it:
+```bash
+file data6.bin
+data6.bin: bzip2 compressed data, block size = 900k
+
+mv data6.bin data6.bz2
+bzip2 -d data6.bz2
+```
+
+Now we're left with a file called `data6` and after checking the contents of the file it was another **tar archive** so I had to extract the files:
+```bash
+file data6
+data6: POSIX tar archive (GNU)
+
+tar -xf data6
+```
+
+After listing out the files from the directory I found `data8.bin` so like usual I checked what type of data the file contained:
+```bash
+file data8.bin
+data8.bin: gzip compressed data
+```
+
+Yet again we are dealing with a `gzip` file so I had to decompress it with the `gzip` command
 
 
 
