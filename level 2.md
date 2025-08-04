@@ -1,7 +1,7 @@
 # Bandit Level 1 → 2
 [Here's the link 😄](https://overthewire.org/wargames/bandit/bandit2.html)
 ## 📝 **Challenge Description**  
-In Level 2, the goal is to retrieve the password for `bandit2`. According to the challenge description:
+In Level 1, the goal is to retrieve the password for `bandit2`. According to the challenge description:
 
 > The password for the next level is stored in a file called `-` located in the home directory.
 
@@ -45,4 +45,4 @@ Still using Cygwin to access the server. I've also started messing with a **Ubun
 ## 🔐 Next Step
 With the password for `bandit2` in hand, it's time to move on to the next level. The next level involves a file with spaces in its name. 
 
-➡️ [Continue to Level 3 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%202%20--%3E%203.md)
+➡️ [Continue to Level 2 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%202%20--%3E%203.md)
