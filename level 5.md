@@ -1,5 +1,5 @@
 # Bandit Level 5 → Level 6
-
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit6.html)
 ## 📝 Challenge Description 
 In this level, the password for `bandit6` is stored **somewhere** in the `inhere` directory — but unlike the previous level, it could be deeper within subdirectories. The exact requirements are:
 
