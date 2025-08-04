@@ -1,5 +1,5 @@
 # Bandit Level 12 → Level 13
-[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit12.html)
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit13.html)
 
 ## 📝 Challenge Description 
 In this level, the password for `bandit13` is in the file `data.txt`, which is a **hexdump** of a file that has been repeatedly compressed. 
