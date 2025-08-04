@@ -62,4 +62,4 @@ Commands: `tr`, `cat`
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 12**. 
 
-➡️ [Continue to Level 12 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2012%20--%3E%2013.md)
+➡️ [Continue to Level 12 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2012.md)
