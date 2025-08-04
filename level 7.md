@@ -44,4 +44,4 @@ I'm slowly getting used to using file filtering techniques in Linux. It's a lot 
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 8**. 
 
-➡️ [Continue to Level 8 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level9.md)
+➡️ [Continue to Level 8 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%208.md)
