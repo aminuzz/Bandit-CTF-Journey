@@ -1,7 +1,7 @@
 # Bandit Level 3 → 4
 [Here's the link 😄](https://overthewire.org/wargames/bandit/bandit4.html)
 ## 📝 Challenge Description  
-In Level 4, the password for `bandit4` is hidden in a file. According to the instructions:
+In Level 3, the password for `bandit4` is hidden in a file. According to the instructions:
 
 > The password is stored in a **hidden file** in the `inhere` directory.
 
@@ -53,4 +53,4 @@ And there was the password for `bandit4`.
 ## 🔐 Next Step
 We've got the password! The next level adds a bit more complexity — it's about finding a specific line based on its attributes like size and permissions. Let's go. 
 
-➡️[Continue to Level 5 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%204%20--%3E%205.md)
+➡️[Continue to Level 4 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%204%20--%3E%205.md)
