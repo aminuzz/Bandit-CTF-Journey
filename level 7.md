@@ -1,5 +1,5 @@
 # Bandit Level 7 → Level 8
-
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit8.html)
 ## 📝 Challenge Description 
 In this level, the password for `bandit8` is stored in the file called `data.txt` next to the word **millionth**.
 
