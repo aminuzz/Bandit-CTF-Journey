@@ -1,5 +1,5 @@
 # Bandit Level 6 → Level 7
-
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit7.html)
 ## 📝 Challenge Description 
 In this level, the password for `bandit7` is stored **somewhere** on the server. Unlike the previous level where the password was stored in a specified directory, we have to find a way to leverage the power of the `find` and `file` commands to look through the entire server.
 
