@@ -53,6 +53,6 @@ In this case, I used Cygwin, which provides a Linux-like environment on Windows.
 
 ## 🔐 Next Step
 
-Now we can move on to **Level 1**. According to the instructions, it's stored in a file called `readme` located in the home directory. 
+Now we can move on to **part II of this level**. According to the instructions, it's stored in a file called `readme` located in the home directory. 
 
-➡️ [Continue to Level 1 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%201.md)
+➡️ [Continue to part II →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/part%20II%20of%20level%200.md)
