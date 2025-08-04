@@ -130,4 +130,4 @@ cat data8
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 13**. 
 
-➡️ [Continue to Level 13 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2013%20--%2014.md)
+➡️ [Continue to Level 13 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2013.md)
