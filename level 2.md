@@ -1,7 +1,7 @@
 # Bandit Level 2 → 3
 [Here's the link 😄](https://overthewire.org/wargames/bandit/bandit3.html)
 ## 📝 Challenge Description 
-In Level 3, the goal is to retrieve the password for `bandit3`. This time, the challenge says:
+In Level 2, the goal is to retrieve the password for `bandit3`. This time, the challenge says:
 
 > The password is stored in a file called "spaces in this filename" located in the home directory.
 
@@ -51,4 +51,4 @@ Still on Cygwin. At this point, I'm getting comfortable with basic shell usage a
 ## 🔐 Next Step
 Now that we've got the password for `bandit3`, the next level introduces hidden files. 
 
-➡️ [Continue to Level 4 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%203%20--%3E%204.md)
+➡️ [Continue to Level 3 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%203.md)
