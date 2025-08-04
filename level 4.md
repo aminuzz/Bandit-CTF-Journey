@@ -1,7 +1,7 @@
 # Bandit Level 4 → 5
 [Here's the link 😄](https://overthewire.org/wargames/bandit/bandit5.html)
 ## 📝 Challenge Description
-The instructions for Level 5 state:
+The instructions for Level 4 state:
 
 > The password for the next level is stored in a file somewhere in the `inhere` directory, **which is human-readable**, **1033 bytes in size**, and **not executable**.
 
@@ -59,4 +59,4 @@ Still using Cygwin here, though this would work on any UNIX-like terminal — WS
 ## 🔐 Next Step
 Now that we've got the password, we can move on to the next level which is similar to this one however there are more requirements for the **human readable file**. 
 
-➡️ [Continue to Level 6 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%205%20--%3E%206.md)
+➡️ [Continue to Level 5 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%205.md)
