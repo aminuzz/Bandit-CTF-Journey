@@ -55,6 +55,7 @@ After running that, I simply **pasted the password** for `bandit14` into the ter
 ## 🛠️ Tools Used 
 **Terminal:** Cygwin  
 **Commands:** `nc`, `nmap`
+Honestly, this was my first time dealing with networking protocols and it was tough at first however with practice I know I will get better at it and truly understand it.
 
 ## 🔐 Next Step
 We’ve successfully grabbed the password and are ready for **Level 15**. 
