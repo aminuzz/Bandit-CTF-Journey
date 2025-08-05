@@ -31,7 +31,7 @@ Based off the `nmap` scan, I noticed two ports were open that had **ssl** runnin
 ```bash
 openssl s_client -connect localhost:31518
 ```
-Like usual it outputted the certifcate and the session ticket so I tried pasting in the password for the next level, however that didn't work:
+Like usual it outputted the certifcate so I tried pasting in the password for the next level, however that didn't work:
 ```text
 read R BLOCK
 kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
@@ -116,10 +116,15 @@ ssh -i key.txt bandit17@bandit.labs.overthewire.org -p 2220
 cat /etc/bandit_pass/bandit17
 ```
 
+After everything, this was the password for **bandit17**:
+```
+EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
+```
+
 ## 🧠 Key Learnings
 - Learned how to scan specific ports using `nmap` and scan for specific services.
 - Learned how to effectively read through documentation to solve a specific problem for a command.
-- Utilized a private RSA key to login to another machine and making sure the permissions were set correctly on it.
+- Utilized a private RSA key to log in to another machine and making sure the permissions were set correctly on it.
 ## 🛠️ Tools Used 
 **Terminal:** Cygwin  
 **Commands:** `nmap`, `openssl`, `s_client`, `vim`, `ssh`, `mktemp`, `cd`
