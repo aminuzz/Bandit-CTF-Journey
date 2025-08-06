@@ -29,9 +29,12 @@ x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
 
 ## 🧠 Key Learnings
 - Learned how to find the differences between two files using the `diff` command.
+  
 ## 🛠️ Tools Used
-**Terminal**: Cygwin
-**Commands**: `diff`
+**Terminal:** Cygwin  
+**Commands:** `diff`
+
+
 ## 🔐 Next Step
 Now let's move onto **level 18**. 
 
