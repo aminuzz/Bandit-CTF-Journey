@@ -36,4 +36,4 @@ This means that line 42 in `passwords.new` was **changed** compared to line 42 i
 ## 🔐 Next Step
 Now let's move onto **level 18**. 
 
-➡️ [Continue to Level 18 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%202%20--%3E%2018.md)
+➡️ [Continue to Level 18 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2018.md)
