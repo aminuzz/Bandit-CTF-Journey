@@ -20,4 +20,4 @@
 ## 🔐 Next Step
 Now let's move onto **level 20**. 
 
-➡️ [Continue to Level 18 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2020.md)
+➡️ [Continue to Level 20 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2020.md)
