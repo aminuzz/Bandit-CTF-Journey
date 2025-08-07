@@ -1,5 +1,5 @@
 # Bandit Level 18 → 19
-[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit18.html)
+[Here's the link 😄](https://overthewire.org/wargames/bandit/bandit19.html)
 ## 📝 **Challenge Description**  
 The password for the next level is stored in a file called **readme** in the homedirectory. Unfortunately, someone has modified the **.bashrc** file in a way where it automatically logs you out when you try to log in via **SSH**. 
 
@@ -49,5 +49,5 @@ cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
 ## 🔐 Next Step
 Now let's move onto **level 19**. 
 
-➡️ [Continue to Level 18 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2019.md)
+➡️ [Continue to Level 19 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2019.md)
 
