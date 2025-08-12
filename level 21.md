@@ -56,8 +56,12 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 # Output:
 tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
 ```
-## 🧠 Key Learnings
+We now have the password for the next level. 
 
+## 🧠 Key Learnings
+- How to locate and interpret system-wide cron jobs in `/etc/cron.d`.
+- Understanding `cron` schedule syntax.
+- How to read a Bash script to trace where sensitive data is written. 
 
 ## 🔐 Next Step
 Now let's move onto **level 22**. 
