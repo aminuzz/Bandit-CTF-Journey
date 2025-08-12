@@ -38,11 +38,24 @@ cat cronjob_bandit22
 @reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
 * * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
 ```
-This script runs **immediately after a reboot** and it **also runs every minute forever** after that. 
+This script runs **immediately after a reboot** and it **also runs every minute forever** after that. So even after reboot the script runs 24/7 no matter what.
 
 
 ## ✔️ What Worked
-
+After I analyzed the details of the **cronjob**, I decided to open and look into the actual script that the **cronjob** is running:
+```bash
+cat /usr/bin/cronjob_bandit22.sh
+# Output:
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+```
+In this script I noticed that the password `bandit21` is saved in a file in the `temp` directory so instinctively I opened the file:
+```bash
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+# Output:
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+```
 ## 🧠 Key Learnings
 
 
