@@ -40,4 +40,4 @@ The password of user bandit25 is iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
 ## 🔐 Next Step
 Now let's move onto **level 25**. 
 
-➡️ [Continue to Level 25 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2024.md)
+➡️ [Continue to Level 25 →](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2025.md)
