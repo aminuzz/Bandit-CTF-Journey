@@ -33,6 +33,27 @@ Each level includes:
 | Level 11 | [level 11.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2011.md) |
 | Level 12 | [level 12.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2012.md) |
 | Level 13 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2013.md) |
+| Level 14 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2014.md) |
+| Level 15 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2015.md) |
+| Level 16 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2016.md) |
+| Level 17 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2017.md) |
+| Level 18 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2018.md) |
+| Level 19 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2019.md) |
+| Level 20 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2020.md) |
+| Level 21 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2021.md) |
+| Level 22 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2022.md) |
+| Level 23 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2023.md) |
+| Level 24 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2024.md) |
+| Level 25 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2025.md) |
+| Level 26 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2026.md) |
+| Level 27 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2028.md) |
+| Level 29 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2029.md) |
+| Level 30 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2030.md) |
+| Level 31 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2031.md) |
+| Level 32 | [level 13.md](https://github.com/aminuzz/Bandit-CTF-Journey/blob/main/level%2032.md) |
+
+
+
 
 
 
